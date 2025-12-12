@@ -11,7 +11,7 @@ Minimal playground for experimenting with computer vision models, starting with 
 - Visualize a few predictions: `uv run python mnist_basic_cnn.py --visualize`
 
 ## Run on a remote GPU host
-- Ensure rsync is installed: `apt update && apt install rspec -y`
+- Ensure rsync is installed: `apt update && apt install rsync -y`
 - Install uv: `curl -sSL https://install.astral.sh | sh`
 - Sync project to remote host: `bin/rspec 1.1.1.1:22 /workspace` (`/workspace` is implied/default)
 - SSH into remote host and run: `cd /workspace && uv sync && uv run python mnist_basic_cnn.py`
